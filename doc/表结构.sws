@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="16.5.5.4734"?>
+<!-- 不要编辑这个文件 -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model ID="{9DA2F3E7-22E0-47E2-8D2C-5E9801A78095}" Name="博客表结构" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="表结构/PhysicalDataModel_1.pdm"/>
+	</Local>
+	<BrowserModule Name="仓库"/>
+</Workspace>
