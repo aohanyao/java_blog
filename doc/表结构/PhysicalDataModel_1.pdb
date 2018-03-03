@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{9DA2F3E7-22E0-47E2-8D2C-5E9801A78095}" Label="" LastModificationDate="1519893590" Name="博客表结构" Objects="94" Symbols="6" Target="SAP SQL Anywhere 16" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="16.5.5.4734"?>
+<?PowerDesigner AppLocale="UTF16" ID="{9DA2F3E7-22E0-47E2-8D2C-5E9801A78095}" Label="" LastModificationDate="1520061041" Name="博客表结构" Objects="126" Symbols="7" Target="PostgreSQL 8" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="16.5.5.4734"?>
 <!-- 不要编辑这个文件 -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>博客表结构</a:Code>
 <a:CreationDate>1519890804</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892227</a:ModificationDate>
+<a:ModificationDate>1520061041</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -257,7 +257,7 @@ Physical Options=Yes
 [FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Index\Filter]
 Primary key=Yes
 Foreign key=Yes
-Alternate key=Yes
+Alternate key=No
 Cluster=Yes
 Other=Yes
 
@@ -366,69 +366,6 @@ GenBackupTabl=1
 GenKeepBackTabl=1
 GenTmpTablDrop=No
 GenKeepTablOpts=No
-
-[FolderOptions\Physical Objects\Database Generation\View &lt;&lt;MaterializedView&gt;&gt;]
-Create=Yes
-Drop=Yes
-Comment=Yes
-Permission=No
-
-[FolderOptions\Physical Objects\Database Generation\View &lt;&lt;MaterializedView&gt;&gt;\ViewColumn]
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\View &lt;&lt;MaterializedView&gt;&gt;\ViewIndex]
-Create=Yes
-Drop=Yes
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\View &lt;&lt;MaterializedView&gt;&gt;\ViewIndex\Filter]
-Cluster=Yes
-Other=Yes
-
-[FolderOptions\Physical Objects\Database Generation\View &lt;&lt;MaterializedView&gt;&gt;\Trigger]
-Create=Yes
-Drop=Yes
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\View &lt;&lt;MaterializedView&gt;&gt;\Trigger\Filter]
-For insert=Yes
-For update=Yes
-For delete=Yes
-For other=Yes
-
-[FolderOptions\Physical Objects\Database Generation\ExtendedObject &lt;&lt;Certificate&gt;&gt;]
-Create=Yes
-Drop=Yes
-
-[FolderOptions\Physical Objects\Database Generation\ExtendedObject &lt;&lt;Event&gt;&gt;]
-Create=Yes
-Drop=Yes
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\ExtendedObject &lt;&lt;LoginPolicy&gt;&gt;]
-Create=Yes
-Drop=Yes
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\ExtendedObject &lt;&lt;MirrorServer&gt;&gt;]
-Create=Yes
-Drop=Yes
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\ExtendedObject &lt;&lt;SpatialReferenceSystem&gt;&gt;]
-Create=Yes
-Drop=Yes
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\ExtendedObject &lt;&lt;SpatialUnitOfMeasure&gt;&gt;]
-Create=Yes
-Drop=Yes
-Comment=Yes
-
-[FolderOptions\Physical Objects\Database Generation\ExtendedObject &lt;&lt;TextConfiguration&gt;&gt;]
-Create=Yes
-Drop=Yes
-Comment=Yes
 
 [FolderOptions\Physical Objects\Test Data]
 GenDataPathName=
@@ -1187,15 +1124,15 @@ PhysOpts=</a:ModelOptionsText>
 </a:ExtendedAttributesText>
 <c:DBMS>
 <o:Shortcut Id="o3">
-<a:ObjectID>C648FD30-D15D-4B97-BA15-3A5A753DB923</a:ObjectID>
-<a:Name>SAP SQL Anywhere 16</a:Name>
-<a:Code>SYASA16</a:Code>
-<a:CreationDate>1519890804</a:CreationDate>
+<a:ObjectID>7695E914-C022-460B-97C8-740A2455D0EE</a:ObjectID>
+<a:Name>PostgreSQL 8</a:Name>
+<a:Code>PGSQL80</a:Code>
+<a:CreationDate>1520061034</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519890804</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:TargetStereotype/>
-<a:TargetID>3B3AB5FF-1A72-461F-BF3E-50C5C86A7DCB</a:TargetID>
+<a:TargetID>8AF15AEA-CCBC-4EDC-B468-7DB8DB5300B2</a:TargetID>
 <a:TargetClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetClassID>
 </o:Shortcut>
 </c:DBMS>
@@ -1206,7 +1143,7 @@ PhysOpts=</a:ModelOptionsText>
 <a:Code>博客表结构</a:Code>
 <a:CreationDate>1519890804</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519893590</a:ModificationDate>
+<a:ModificationDate>1520060379</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -1630,9 +1567,9 @@ Shadow=0</a:DisplayPreferences>
 <a:PaperSource>7</a:PaperSource>
 <c:Symbols>
 <o:TableSymbol Id="o5">
-<a:ModificationDate>1519892465</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-23730,753), (-12118,7195))</a:Rect>
+<a:Rect>((-23926,4021), (-11696,10463))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>166354</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1654,9 +1591,9 @@ LABL 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:TableSymbol>
 <o:TableSymbol Id="o7">
-<a:ModificationDate>1519892756</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-8580,866), (3032,8282))</a:Rect>
+<a:Rect>((-8696,-1569), (3148,10717))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>166354</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1678,9 +1615,9 @@ LABL 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:TableSymbol>
 <o:TableSymbol Id="o9">
-<a:ModificationDate>1519892750</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-24599,-11975), (-19800,-7976))</a:Rect>
+<a:Rect>((-10299,-11957), (849,-2593))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>166354</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1702,9 +1639,9 @@ LABL 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:TableSymbol>
 <o:TableSymbol Id="o11">
-<a:ModificationDate>1519892754</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((12751,1225), (17550,5224))</a:Rect>
+<a:Rect>((-19636,12757), (-6016,23095))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>166354</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1726,9 +1663,9 @@ LABL 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:TableSymbol>
 <o:TableSymbol Id="o13">
-<a:ModificationDate>1519890932</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-2849,-11525), (1950,-7526))</a:Rect>
+<a:Rect>((-24524,-3556), (-14534,443))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>166354</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1749,30 +1686,6 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Ref="o14"/>
 </c:Object>
 </o:TableSymbol>
-<o:TableSymbol Id="o15">
-<a:ModificationDate>1519890974</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-19327,12757), (-6325,23095))</a:Rect>
-<a:LineColor>16512</a:LineColor>
-<a:FillColor>166354</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-OWNRDISPNAME 0 新宋体,8,N
-Columns 0 Arial,8,N
-TablePkColumns 0 Arial,8,U
-TableFkColumns 0 Arial,8,N
-Keys 0 Arial,8,N
-Indexes 0 Arial,8,N
-Triggers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Table Ref="o16"/>
-</c:Object>
-</o:TableSymbol>
 </c:Symbols>
 </o:PhysicalDiagram>
 </c:PhysicalDiagrams>
@@ -1783,73 +1696,75 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Table Id="o6">
 <a:ObjectID>5AA7995E-8D66-4800-9A21-432FE10A74C7</a:ObjectID>
 <a:Name>文章类型表</a:Name>
-<a:Code>文章类型表</a:Code>
+<a:Code>blog_article_type</a:Code>
 <a:CreationDate>1519890879</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892644</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o17">
+<o:Column Id="o15">
 <a:ObjectID>7A178964-816F-48A2-A66A-FD8D8F6A13B4</a:ObjectID>
 <a:Name>文章类型id</a:Name>
 <a:Code>article_type_id</a:Code>
 <a:CreationDate>1519892473</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892644</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>integer</a:DataType>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o18">
+<o:Column Id="o16">
 <a:ObjectID>06D12D0E-3468-4B8F-BB93-C4449B683EB5</a:ObjectID>
 <a:Name>文章类型code</a:Name>
 <a:Code>article_type_code</a:Code>
 <a:CreationDate>1519892473</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892644</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(100)</a:DataType>
+<a:DataType>CHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o19">
+<o:Column Id="o17">
 <a:ObjectID>38A85AB8-B94B-4239-9755-5BA042F8AD44</a:ObjectID>
 <a:Name>文章类型名称</a:Name>
 <a:Code>article_type_name</a:Code>
 <a:CreationDate>1519892473</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892644</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(100)</a:DataType>
+<a:DataType>CHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o20">
+<o:Column Id="o18">
 <a:ObjectID>A76DC1AF-FAFB-4388-AB86-0DB0FF489287</a:ObjectID>
 <a:Name>创建时间</a:Name>
 <a:Code>create_time</a:Code>
 <a:CreationDate>1519892473</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892644</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>date</a:DataType>
+<a:DataType>DATE</a:DataType>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o21">
+<o:Column Id="o19">
 <a:ObjectID>A60FC7BC-93F0-4F31-9A7D-77BB48EE0814</a:ObjectID>
 <a:Name>状态</a:Name>
 <a:Code>status</a:Code>
 <a:CreationDate>1519892473</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892644</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>integer</a:DataType>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o22">
+<o:Key Id="o20">
 <a:ObjectID>CF11CA42-1142-4228-BEB5-0DB268E603AC</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -1858,97 +1773,157 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1519892644</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o17"/>
+<o:Column Ref="o15"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o22"/>
+<o:Key Ref="o20"/>
 </c:PrimaryKey>
-<c:ClusterObject>
-<o:Key Ref="o22"/>
-</c:ClusterObject>
 </o:Table>
 <o:Table Id="o8">
 <a:ObjectID>0BB08267-C84C-43D8-BAC5-6C63C2BD46AF</a:ObjectID>
 <a:Name>文章表</a:Name>
-<a:Code>文章表</a:Code>
+<a:Code>blog_article</a:Code>
 <a:CreationDate>1519890879</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892921</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o23">
+<o:Column Id="o21">
 <a:ObjectID>0650A398-C13C-4E5A-B98B-87939E2627BF</a:ObjectID>
 <a:Name>文章id</a:Name>
 <a:Code>article_id</a:Code>
 <a:CreationDate>1519892757</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892921</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>integer</a:DataType>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o24">
+<o:Column Id="o22">
 <a:ObjectID>2043C08B-4EED-42FF-8D4B-D520A75BE521</a:ObjectID>
 <a:Name>文章类型id</a:Name>
 <a:Code>article_type_id</a:Code>
 <a:CreationDate>1519892757</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892921</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>integer</a:DataType>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o25">
+<o:Column Id="o23">
 <a:ObjectID>8EDB9B73-F4A8-45D1-B668-FC61679FC6C7</a:ObjectID>
 <a:Name>文章标题</a:Name>
 <a:Code>article_title</a:Code>
 <a:CreationDate>1519892757</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892921</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(200)</a:DataType>
+<a:DataType>CHAR(200)</a:DataType>
 <a:Length>200</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o26">
+<o:Column Id="o24">
 <a:ObjectID>93B9D817-B7A5-42CB-83F5-A9B73AC84195</a:ObjectID>
 <a:Name>文章内容</a:Name>
 <a:Code>article_content</a:Code>
 <a:CreationDate>1519892757</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892921</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>long varchar</a:DataType>
+<a:DataType>VARCHAR(1)</a:DataType>
+<a:Length>1</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o27">
+<o:Column Id="o25">
 <a:ObjectID>2E657EA2-7E4B-4005-BF8F-C977588C980C</a:ObjectID>
 <a:Name>发布时间</a:Name>
 <a:Code>create_time</a:Code>
 <a:CreationDate>1519892757</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892921</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>date</a:DataType>
+<a:DataType>DATE</a:DataType>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o28">
+<o:Column Id="o26">
 <a:ObjectID>D2F3E173-A20E-4F91-963F-B83698D19CA1</a:ObjectID>
 <a:Name>更新时间</a:Name>
 <a:Code>update_time</a:Code>
 <a:CreationDate>1519892757</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892921</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>date</a:DataType>
+<a:DataType>DATE</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o27">
+<a:ObjectID>F5C9173F-F1BB-4EEB-9744-7611AA6D4F49</a:ObjectID>
+<a:Name>浏览次数</a:Name>
+<a:Code>browse_count</a:Code>
+<a:CreationDate>1520059791</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o28">
+<a:ObjectID>8AED8105-1578-4F0E-9A61-46A08340FF09</a:ObjectID>
+<a:Name>评论数量</a:Name>
+<a:Code>comm_count</a:Code>
+<a:CreationDate>1520059809</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o29">
+<a:ObjectID>A04AA77A-63E6-406A-931A-B30A9616A1A5</a:ObjectID>
+<a:Name>摘要</a:Name>
+<a:Code>abstract_content</a:Code>
+<a:CreationDate>1520059809</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>CHAR(200)</a:DataType>
+<a:Length>200</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o30">
+<a:ObjectID>F4DCE891-7A7A-46CC-8CE2-412767B79ED0</a:ObjectID>
+<a:Name>标签</a:Name>
+<a:Code>tag</a:Code>
+<a:CreationDate>1520060039</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>CHAR(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o31">
+<a:ObjectID>B7AC4479-5C24-43EB-9BD4-ADACBF3BD9E5</a:ObjectID>
+<a:Name>日期link</a:Name>
+<a:Code>date_link</a:Code>
+<a:CreationDate>1520060422</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>CHAR(200)</a:DataType>
+<a:Length>200</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o29">
+<o:Key Id="o32">
 <a:ObjectID>98A8982A-6EC5-422A-B4F2-CF6A82309550</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -1957,165 +1932,258 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1519892921</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o23"/>
+<o:Column Ref="o21"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o29"/>
+<o:Key Ref="o32"/>
 </c:PrimaryKey>
-<c:ClusterObject>
-<o:Key Ref="o29"/>
-</c:ClusterObject>
 </o:Table>
 <o:Table Id="o10">
-<a:ObjectID>C6BB60F4-6632-4B7E-AFF1-960822B4DD13</a:ObjectID>
-<a:Name>相册表</a:Name>
-<a:Code>相册表</a:Code>
-<a:CreationDate>1519890880</a:CreationDate>
-<a:Creator>Android</a:Creator>
-<a:ModificationDate>1519890916</a:ModificationDate>
-<a:Modifier>Android</a:Modifier>
-<a:TotalSavingCurrency/>
-</o:Table>
-<o:Table Id="o12">
 <a:ObjectID>7CAE38C7-D8DE-4F56-A45B-CEE5770DA942</a:ObjectID>
 <a:Name>文章评论表</a:Name>
-<a:Code>文章评论表</a:Code>
+<a:Code>blog_article_comment</a:Code>
 <a:CreationDate>1519890920</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519890946</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:TotalSavingCurrency/>
-</o:Table>
-<o:Table Id="o14">
-<a:ObjectID>C9A9A6BC-BB73-4B24-AF0F-F610930F0131</a:ObjectID>
-<a:Name>留言表</a:Name>
-<a:Code>留言表</a:Code>
-<a:CreationDate>1519890932</a:CreationDate>
+<c:Columns>
+<o:Column Id="o33">
+<a:ObjectID>F5469C81-399E-441B-91FA-EA0F250D383E</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>comment_id</a:Code>
+<a:CreationDate>1520060059</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519890955</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:TotalSavingCurrency/>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o34">
+<a:ObjectID>AFEA3F2D-4DA7-4FCB-8399-67C2DE53114D</a:ObjectID>
+<a:Name>文章id</a:Name>
+<a:Code>article_id</a:Code>
+<a:CreationDate>1520060059</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o35">
+<a:ObjectID>681A29EB-5C97-49F8-BE0F-6156E5686FA1</a:ObjectID>
+<a:Name>用户id</a:Name>
+<a:Code>user_id</a:Code>
+<a:CreationDate>1520060059</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o36">
+<a:ObjectID>B59AF06B-A374-48A4-B16F-E36C8B2C72BB</a:ObjectID>
+<a:Name>评论内容</a:Name>
+<a:Code>comment_content</a:Code>
+<a:CreationDate>1520060059</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>VARCHAR(1)</a:DataType>
+<a:Length>1</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o37">
+<a:ObjectID>B9B4E891-E92A-44C7-81A5-052204AE06E7</a:ObjectID>
+<a:Name>点赞数量</a:Name>
+<a:Code>star_count</a:Code>
+<a:CreationDate>1520060059</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o38">
+<a:ObjectID>E20E9D79-F93C-45E3-A00B-E2ABBF327425</a:ObjectID>
+<a:Name>评论时间</a:Name>
+<a:Code>comment_count</a:Code>
+<a:CreationDate>1520060059</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>DATE</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o39">
+<a:ObjectID>E2A6A713-B62E-4095-A516-C334EBF7C6EC</a:ObjectID>
+<a:Name>评论id</a:Name>
+<a:Code>reply_comment_id</a:Code>
+<a:CreationDate>1520060259</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:Comment>回复评论</a:Comment>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+</o:Column>
+<o:Column Id="o40">
+<a:ObjectID>F36F1764-5F8E-4599-9102-9A6661A62FAF</a:ObjectID>
+<a:Name>状态</a:Name>
+<a:Code>status</a:Code>
+<a:CreationDate>1520060619</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o41">
+<a:ObjectID>F3B15B9B-D5E2-42DE-91DE-957FBB3A39BC</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1520060619</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520060709</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o33"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o41"/>
+</c:PrimaryKey>
 </o:Table>
-<o:Table Id="o16">
+<o:Table Id="o12">
 <a:ObjectID>BF5C66F7-74C9-46DD-87B2-1BC5952B5E96</a:ObjectID>
 <a:Name>用户表</a:Name>
 <a:Code>blog_user</a:Code>
 <a:CreationDate>1519890974</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892406</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o30">
+<o:Column Id="o42">
 <a:ObjectID>8FF20632-71F3-4ADB-BAE7-C7D7E684A6CD</a:ObjectID>
 <a:Name>用户id</a:Name>
 <a:Code>user_id</a:Code>
 <a:CreationDate>1519891103</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519891194</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(100)</a:DataType>
+<a:DataType>CHAR(100)</a:DataType>
 <a:Length>100</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o31">
+<o:Column Id="o43">
 <a:ObjectID>0026102B-ABCC-47A6-804A-CC8FC21B0450</a:ObjectID>
 <a:Name>用户登录名</a:Name>
 <a:Code>user_name</a:Code>
 <a:CreationDate>1519891364</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519891427</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(30)</a:DataType>
+<a:DataType>CHAR(30)</a:DataType>
 <a:Length>30</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o32">
+<o:Column Id="o44">
 <a:ObjectID>E13E5502-3BB2-49E1-A788-9481ABBA4C36</a:ObjectID>
 <a:Name>用户登录密码</a:Name>
 <a:Code>user_pass</a:Code>
 <a:CreationDate>1519891364</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519891427</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(30)</a:DataType>
+<a:DataType>CHAR(30)</a:DataType>
 <a:Length>30</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o33">
+<o:Column Id="o45">
 <a:ObjectID>CD410E3A-D4D8-413A-8ABA-4E652600CC6E</a:ObjectID>
 <a:Name>用户昵称</a:Name>
 <a:Code>nick_name</a:Code>
 <a:CreationDate>1519891869</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519891981</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(30)</a:DataType>
+<a:DataType>CHAR(30)</a:DataType>
 <a:Length>30</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o34">
+<o:Column Id="o46">
 <a:ObjectID>2CCE5D04-C944-4C54-A9B3-2CEEA3D08069</a:ObjectID>
 <a:Name>头像</a:Name>
 <a:Code>header</a:Code>
 <a:CreationDate>1519891869</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519891981</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(200)</a:DataType>
+<a:DataType>CHAR(200)</a:DataType>
 <a:Length>200</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o35">
+<o:Column Id="o47">
 <a:ObjectID>EBB28CE2-C1D4-439C-96A7-A02378674486</a:ObjectID>
 <a:Name>年龄</a:Name>
 <a:Code>age</a:Code>
 <a:CreationDate>1519891869</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519891981</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>integer</a:DataType>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o36">
+<o:Column Id="o48">
 <a:ObjectID>E24F4F0E-E49F-4E02-BA85-F5B68D53CF11</a:ObjectID>
 <a:Name>性别(1：男 0：女)</a:Name>
 <a:Code>sex</a:Code>
 <a:CreationDate>1519892009</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892227</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>integer</a:DataType>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o37">
+<o:Column Id="o49">
 <a:ObjectID>3ECEB7CE-A0FF-4824-A39E-8843380D57E7</a:ObjectID>
 <a:Name>手机号码</a:Name>
 <a:Code>phone</a:Code>
 <a:CreationDate>1519892242</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892410</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>char(30)</a:DataType>
+<a:DataType>CHAR(30)</a:DataType>
 <a:Length>30</a:Length>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o38">
+<o:Column Id="o50">
 <a:ObjectID>C466B179-A87F-4AB4-91BD-ED76A54B41A2</a:ObjectID>
 <a:Name>注册时间</a:Name>
 <a:Code>register_time</a:Code>
 <a:CreationDate>1519892242</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1519892410</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:DataType>date</a:DataType>
+<a:DataType>DATE</a:DataType>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o39">
+<o:Key Id="o51">
 <a:ObjectID>AE77AD7F-0133-4649-95EE-153EF23D197D</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -2124,20 +2192,70 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1519891194</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o30"/>
+<o:Column Ref="o42"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o39"/>
+<o:Key Ref="o51"/>
 </c:PrimaryKey>
-<c:ClusterObject>
-<o:Key Ref="o39"/>
-</c:ClusterObject>
+</o:Table>
+<o:Table Id="o14">
+<a:ObjectID>4B038D37-F2E5-4FDC-B3CA-7A3842A10A96</a:ObjectID>
+<a:Name>文章标签表</a:Name>
+<a:Code>blog_article_tag</a:Code>
+<a:CreationDate>1520059987</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o52">
+<a:ObjectID>92144ACB-CB05-4D9C-AEEA-11A0A914261C</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1520059989</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>INT4</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o53">
+<a:ObjectID>1DCF1D20-986E-4FE8-9523-2B151A54B45A</a:ObjectID>
+<a:Name>标签名称</a:Name>
+<a:Code>tag_name</a:Code>
+<a:CreationDate>1520060016</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520061035</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>CHAR(20)</a:DataType>
+<a:Length>20</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o54">
+<a:ObjectID>5C212357-C58C-431A-A108-FA47A288F849</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1520060904</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520060935</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o52"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o54"/>
+</c:PrimaryKey>
 </o:Table>
 </c:Tables>
 <c:DefaultGroups>
-<o:Group Id="o40">
+<o:Group Id="o55">
 <a:ObjectID>94BACE02-0321-48FA-8168-92E9F7BF6912</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -2148,18 +2266,18 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o41">
-<a:ObjectID>6A2DDE89-D7BF-4DCA-A2AC-46AED5AC9EA9</a:ObjectID>
-<a:Name>SAP SQL Anywhere 16</a:Name>
-<a:Code>SYASA16</a:Code>
-<a:CreationDate>1519890804</a:CreationDate>
+<o:TargetModel Id="o56">
+<a:ObjectID>DE1BB3E8-5877-4AD9-AA16-87425AC8509B</a:ObjectID>
+<a:Name>PostgreSQL 8</a:Name>
+<a:Code>PGSQL80</a:Code>
+<a:CreationDate>1520061034</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1348143384</a:ModificationDate>
+<a:ModificationDate>1520061035</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
-<a:TargetModelURL>file:///%[XDB]%/syasa160.xdb</a:TargetModelURL>
-<a:TargetModelID>3B3AB5FF-1A72-461F-BF3E-50C5C86A7DCB</a:TargetModelID>
+<a:TargetModelURL>file:///%[XDB]%/pgsql8.xdb</a:TargetModelURL>
+<a:TargetModelID>8AF15AEA-CCBC-4EDC-B468-7DB8DB5300B2</a:TargetModelID>
 <a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
-<a:TargetModelLastModificationDate>1348143384</a:TargetModelLastModificationDate>
+<a:TargetModelLastModificationDate>1263300423</a:TargetModelLastModificationDate>
 <c:SessionShortcuts>
 <o:Shortcut Ref="o3"/>
 </c:SessionShortcuts>
