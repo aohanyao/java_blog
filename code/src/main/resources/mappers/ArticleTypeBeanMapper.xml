@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aohanyao.blog.dao.ArticleTypeBeanMapper">
+  <resultMap id="BaseResultMap" type="com.aohanyao.blog.bean.ArticleTypeBean">
+    <constructor>
+      <idArg column="article_type_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="article_type_code" javaType="java.lang.String" jdbcType="CHAR" />
+      <arg column="article_type_name" javaType="java.lang.String" jdbcType="CHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="DATE" />
+      <arg column="status" javaType="java.lang.Integer" jdbcType="INTEGER" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    article_type_id, article_type_code, article_type_name, create_time, status
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from blog_article_type
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from blog_article_type
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    insert into blog_article_type (article_type_id, article_type_code, article_type_name, 
+      create_time, status)
+    values (#{articleTypeId,jdbcType=INTEGER}, #{articleTypeCode,jdbcType=CHAR}, #{articleTypeName,jdbcType=CHAR}, 
+      #{createTime,jdbcType=DATE}, #{status,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    insert into blog_article_type
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="articleTypeId != null">
+        article_type_id,
+      </if>
+      <if test="articleTypeCode != null">
+        article_type_code,
+      </if>
+      <if test="articleTypeName != null">
+        article_type_name,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="articleTypeId != null">
+        #{articleTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="articleTypeCode != null">
+        #{articleTypeCode,jdbcType=CHAR},
+      </if>
+      <if test="articleTypeName != null">
+        #{articleTypeName,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=DATE},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    update blog_article_type
+    <set>
+      <if test="articleTypeCode != null">
+        article_type_code = #{articleTypeCode,jdbcType=CHAR},
+      </if>
+      <if test="articleTypeName != null">
+        article_type_name = #{articleTypeName,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=DATE},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+    </set>
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    update blog_article_type
+    set article_type_code = #{articleTypeCode,jdbcType=CHAR},
+      article_type_name = #{articleTypeName,jdbcType=CHAR},
+      create_time = #{createTime,jdbcType=DATE},
+      status = #{status,jdbcType=INTEGER}
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.aohanyao.blog.bean.ArticleTypeBean">
+    <constructor>
+      <idArg column="article_type_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="article_type_code" javaType="java.lang.String" jdbcType="CHAR" />
+      <arg column="article_type_name" javaType="java.lang.String" jdbcType="CHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="DATE" />
+      <arg column="status" javaType="java.lang.Integer" jdbcType="INTEGER" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    article_type_id, article_type_code, article_type_name, create_time, status
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from blog_article_type
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from blog_article_type
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    insert into blog_article_type (article_type_id, article_type_code, article_type_name, 
+      create_time, status)
+    values (#{articleTypeId,jdbcType=INTEGER}, #{articleTypeCode,jdbcType=CHAR}, #{articleTypeName,jdbcType=CHAR}, 
+      #{createTime,jdbcType=DATE}, #{status,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    insert into blog_article_type
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="articleTypeId != null">
+        article_type_id,
+      </if>
+      <if test="articleTypeCode != null">
+        article_type_code,
+      </if>
+      <if test="articleTypeName != null">
+        article_type_name,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="articleTypeId != null">
+        #{articleTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="articleTypeCode != null">
+        #{articleTypeCode,jdbcType=CHAR},
+      </if>
+      <if test="articleTypeName != null">
+        #{articleTypeName,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=DATE},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    update blog_article_type
+    <set>
+      <if test="articleTypeCode != null">
+        article_type_code = #{articleTypeCode,jdbcType=CHAR},
+      </if>
+      <if test="articleTypeName != null">
+        article_type_name = #{articleTypeName,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=DATE},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+    </set>
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aohanyao.blog.bean.ArticleTypeBean">
+    update blog_article_type
+    set article_type_code = #{articleTypeCode,jdbcType=CHAR},
+      article_type_name = #{articleTypeName,jdbcType=CHAR},
+      create_time = #{createTime,jdbcType=DATE},
+      status = #{status,jdbcType=INTEGER}
+    where article_type_id = #{articleTypeId,jdbcType=INTEGER}
+  </update>
+</mapper>

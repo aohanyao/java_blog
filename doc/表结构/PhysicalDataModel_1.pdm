@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{9DA2F3E7-22E0-47E2-8D2C-5E9801A78095}" Label="" LastModificationDate="1520061439" Name="博客表结构" Objects="140" Symbols="7" Target="MySQL 5.0" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="16.5.5.4734"?>
+<?PowerDesigner AppLocale="UTF16" ID="{9DA2F3E7-22E0-47E2-8D2C-5E9801A78095}" Label="" LastModificationDate="1520068620" Name="博客表结构" Objects="141" Symbols="7" Target="MySQL 5.0" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="16.5.5.4734"?>
 <!-- 不要编辑这个文件 -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>博客表结构</a:Code>
 <a:CreationDate>1519890804</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1520061439</a:ModificationDate>
+<a:ModificationDate>1520061483</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -208,7 +208,7 @@ Footer=Yes
 Constraint declaration=No
 
 [FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Column]
-User datatype=Yes
+User datatype=No
 Default value=Yes
 Check=Yes
 Physical Options=Yes
@@ -255,8 +255,8 @@ Constraint declaration=Yes
 Physical Options=Yes
 
 [FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Index\Filter]
-Primary key=Yes
-Foreign key=Yes
+Primary key=No
+Foreign key=No
 Alternate key=No
 Cluster=Yes
 Other=Yes
@@ -1641,7 +1641,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:TableSymbol Id="o11">
 <a:ModificationDate>1520061439</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-19327,12757), (-6325,23095))</a:Rect>
+<a:Rect>((-19327,12270), (-6325,23582))</a:Rect>
 <a:LineColor>16512</a:LineColor>
 <a:FillColor>166354</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2079,7 +2079,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>blog_user</a:Code>
 <a:CreationDate>1519890974</a:CreationDate>
 <a:Creator>Android</a:Creator>
-<a:ModificationDate>1520061035</a:ModificationDate>
+<a:ModificationDate>1520068620</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -2196,9 +2196,20 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>date</a:DataType>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
+<o:Column Id="o51">
+<a:ObjectID>6062A6FB-F31A-4412-BD2D-E5C3ECCEF5C7</a:ObjectID>
+<a:Name>邮箱</a:Name>
+<a:Code>email</a:Code>
+<a:CreationDate>1520068595</a:CreationDate>
+<a:Creator>Android</a:Creator>
+<a:ModificationDate>1520068620</a:ModificationDate>
+<a:Modifier>Android</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o51">
+<o:Key Id="o52">
 <a:ObjectID>AE77AD7F-0133-4649-95EE-153EF23D197D</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -2212,7 +2223,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o51"/>
+<o:Key Ref="o52"/>
 </c:PrimaryKey>
 </o:Table>
 <o:Table Id="o14">
@@ -2225,7 +2236,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Modifier>Android</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
-<o:Column Id="o52">
+<o:Column Id="o53">
 <a:ObjectID>92144ACB-CB05-4D9C-AEEA-11A0A914261C</a:ObjectID>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
@@ -2236,7 +2247,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Column.Mandatory>1</a:Column.Mandatory>
 </o:Column>
-<o:Column Id="o53">
+<o:Column Id="o54">
 <a:ObjectID>1DCF1D20-986E-4FE8-9523-2B151A54B45A</a:ObjectID>
 <a:Name>标签名称</a:Name>
 <a:Code>tag_name</a:Code>
@@ -2250,7 +2261,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Column>
 </c:Columns>
 <c:Keys>
-<o:Key Id="o54">
+<o:Key Id="o55">
 <a:ObjectID>5C212357-C58C-431A-A108-FA47A288F849</a:ObjectID>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
@@ -2259,17 +2270,17 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1520060935</a:ModificationDate>
 <a:Modifier>Android</a:Modifier>
 <c:Key.Columns>
-<o:Column Ref="o52"/>
+<o:Column Ref="o53"/>
 </c:Key.Columns>
 </o:Key>
 </c:Keys>
 <c:PrimaryKey>
-<o:Key Ref="o54"/>
+<o:Key Ref="o55"/>
 </c:PrimaryKey>
 </o:Table>
 </c:Tables>
 <c:DefaultGroups>
-<o:Group Id="o55">
+<o:Group Id="o56">
 <a:ObjectID>94BACE02-0321-48FA-8168-92E9F7BF6912</a:ObjectID>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
@@ -2280,7 +2291,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
-<o:TargetModel Id="o56">
+<o:TargetModel Id="o57">
 <a:ObjectID>3D008EE3-DFB6-4502-964D-8B8A181610A2</a:ObjectID>
 <a:Name>MySQL 5.0</a:Name>
 <a:Code>MYSQL50</a:Code>
