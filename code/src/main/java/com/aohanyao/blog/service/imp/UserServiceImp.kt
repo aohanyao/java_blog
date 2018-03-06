@@ -16,21 +16,21 @@ import org.springframework.stereotype.Service
  */
 
 @Service("iUserService")
-class UserServiceImp : IUserService {
+public class UserServiceImp : IUserService {
 
     @Autowired
-    val userBeanMapper: UserBeanMapper? = null
+    val mUserBeanMapper: UserBeanMapper? = null
 
 
     override fun register(user: UserBean): ServerResponse<String>? {
         //1.检查邮箱是否存在
-        val userNameExit = userBeanMapper!!.checkUserNameExit(user.userName)
+        val userNameExit = mUserBeanMapper!!.checkUserNameExit(user.userName)
         if (userNameExit > 0) {
             return ServerResponse.createByErrorMessage("该用户名已存在")
         }
 
         //2.检查用户名是否存在
-        val emailExit = userBeanMapper.checkEmailExit(user.email)
+        val emailExit = mUserBeanMapper.checkEmailExit(user.email)
         if (emailExit > 0) {
             return ServerResponse.createByErrorMessage("邮箱已存在")
         }
@@ -43,7 +43,7 @@ class UserServiceImp : IUserService {
         user.phone = ""
         user.sex = 0
         //5.插入数据
-        val insertCount = userBeanMapper.insert(user)
+        val insertCount = mUserBeanMapper.insert(user)
         if (insertCount <= 0) {
             return ServerResponse.createByErrorMessage("注册失败")
         }

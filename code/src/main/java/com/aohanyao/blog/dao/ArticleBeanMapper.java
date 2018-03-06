@@ -1,7 +1,9 @@
 package com.aohanyao.blog.dao;
 
 import com.aohanyao.blog.bean.ArticleBean;
+import org.mapstruct.Mapper;
 
+@Mapper
 public interface ArticleBeanMapper {
     int deleteByPrimaryKey(Integer articleId);
 

@@ -28,7 +28,7 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("RESTful APIs")
                 .description("Spring Boot")
-                .termsOfServiceUrl("http://blog.didispace.com/")
+                .termsOfServiceUrl("http://.com/")
                 .version("1.0")
                 .build();
     }

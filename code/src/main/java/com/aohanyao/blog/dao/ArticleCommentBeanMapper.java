@@ -1,7 +1,9 @@
 package com.aohanyao.blog.dao;
 
 import com.aohanyao.blog.bean.ArticleCommentBean;
+import org.mapstruct.Mapper;
 
+@Mapper
 public interface ArticleCommentBeanMapper {
     int deleteByPrimaryKey(Integer commentId);
 
