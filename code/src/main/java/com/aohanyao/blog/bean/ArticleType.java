@@ -2,7 +2,7 @@ package com.aohanyao.blog.bean;
 
 import java.util.Date;
 
-public class ArticleTypeBean {
+public class ArticleType {
     private Integer articleTypeId;
 
     private String articleTypeCode;
@@ -13,7 +13,7 @@ public class ArticleTypeBean {
 
     private Integer status;
 
-    public ArticleTypeBean(Integer articleTypeId, String articleTypeCode, String articleTypeName, Date createTime, Integer status) {
+    public ArticleType(Integer articleTypeId, String articleTypeCode, String articleTypeName, Date createTime, Integer status) {
         this.articleTypeId = articleTypeId;
         this.articleTypeCode = articleTypeCode;
         this.articleTypeName = articleTypeName;
@@ -21,7 +21,7 @@ public class ArticleTypeBean {
         this.status = status;
     }
 
-    public ArticleTypeBean() {
+    public ArticleType() {
         super();
     }
 

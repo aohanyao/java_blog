@@ -1,6 +1,6 @@
 package com.aohanyao.blog.controller;
 
-import com.aohanyao.blog.bean.UserBean;
+import com.aohanyao.blog.bean.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,7 +35,7 @@ public class UserControllerTest {
     @Test
     public void register() throws Exception {
         //填充数据 start
-        UserBean userBean = new UserBean();
+        User userBean = new User();
         userBean.setEmail("aohanyao@gmail.com");
         userBean.setAge(18);
         userBean.setNickName("测试");

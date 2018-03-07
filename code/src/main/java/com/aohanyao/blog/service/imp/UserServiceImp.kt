@@ -1,8 +1,8 @@
 package com.aohanyao.blog.service.imp
 
-import com.aohanyao.blog.bean.UserBean
+import com.aohanyao.blog.bean.User
 import com.aohanyao.blog.common.ServerResponse
-import com.aohanyao.blog.dao.UserBeanMapper
+import com.aohanyao.blog.dao.UserMapper
 import com.aohanyao.blog.service.IUserService
 import com.aohanyao.blog.utils.MD5Util
 import org.springframework.beans.factory.annotation.Autowired
@@ -16,21 +16,21 @@ import org.springframework.stereotype.Service
  */
 
 @Service("iUserService")
-public class UserServiceImp : IUserService {
+ class UserServiceImp : IUserService {
 
     @Autowired
-    val mUserBeanMapper: UserBeanMapper? = null
+    val mUserMapper: UserMapper? = null
 
 
-    override fun register(user: UserBean): ServerResponse<String>? {
+    override fun register(user: User): ServerResponse<String>? {
         //1.检查邮箱是否存在
-        val userNameExit = mUserBeanMapper!!.checkUserNameExit(user.userName)
+        val userNameExit = mUserMapper!!.checkUserNameExit(user.userName)
         if (userNameExit > 0) {
             return ServerResponse.createByErrorMessage("该用户名已存在")
         }
 
         //2.检查用户名是否存在
-        val emailExit = mUserBeanMapper.checkEmailExit(user.email)
+        val emailExit = mUserMapper.checkEmailExit(user.email)
         if (emailExit > 0) {
             return ServerResponse.createByErrorMessage("邮箱已存在")
         }
@@ -43,19 +43,19 @@ public class UserServiceImp : IUserService {
         user.phone = ""
         user.sex = 0
         //5.插入数据
-        val insertCount = mUserBeanMapper.insert(user)
+        val insertCount = mUserMapper.insert(user)
         if (insertCount <= 0) {
             return ServerResponse.createByErrorMessage("注册失败")
         }
         return ServerResponse.createBySuccess("注册成功")
     }
 
-    override fun login(username: String, password: String): ServerResponse<UserBean>? {
+    override fun login(username: String, password: String): ServerResponse<User>? {
 
         return null
     }
 
-    override fun selectAllUser(): ServerResponse<List<UserBean>>? {
+    override fun selectAllUser(): ServerResponse<List<User>>? {
         return null
     }
 
@@ -72,7 +72,7 @@ public class UserServiceImp : IUserService {
         return null
     }
 
-    override fun validUserQuestionAndAnswer(username: String, question: String, answer: String): ServerResponse<UserBean>? {
+    override fun validUserQuestionAndAnswer(username: String, question: String, answer: String): ServerResponse<User>? {
         return null
     }
 
@@ -80,7 +80,7 @@ public class UserServiceImp : IUserService {
         return null
     }
 
-    override fun loginAdmin(username: String, password: String): ServerResponse<UserBean>? {
+    override fun loginAdmin(username: String, password: String): ServerResponse<User>? {
         return null
     }
 }

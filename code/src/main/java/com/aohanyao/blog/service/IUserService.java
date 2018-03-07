@@ -1,6 +1,6 @@
 package com.aohanyao.blog.service;
 
-import com.aohanyao.blog.bean.UserBean;
+import com.aohanyao.blog.bean.User;
 import com.aohanyao.blog.common.ServerResponse;
 import com.sun.istack.internal.NotNull;
 
@@ -18,14 +18,14 @@ public interface IUserService {
      * @param password
      * @return
      */
-    ServerResponse<UserBean> login(String username, String password);
+    ServerResponse<User> login(String username, String password);
 
     /**
      * 查询所有的用户
      *
      * @return
      */
-    ServerResponse<List<UserBean>> selectAllUser();
+    ServerResponse<List<User>> selectAllUser();
 
     /**
      * 用户注册
@@ -33,7 +33,7 @@ public interface IUserService {
      * @param user
      * @return
      */
-    ServerResponse<String> register(UserBean user);
+    ServerResponse<String> register(User user);
 
     /**
      * 检测邮箱是否存在
@@ -68,7 +68,7 @@ public interface IUserService {
      * @param answer
      * @return
      */
-    ServerResponse<UserBean> validUserQuestionAndAnswer(String username,
+    ServerResponse<User> validUserQuestionAndAnswer(String username,
                                                     String question,
                                                     String answer);
 
@@ -90,5 +90,5 @@ public interface IUserService {
      * @param password
      * @return
      */
-     ServerResponse<UserBean> loginAdmin(String username, String password);
+     ServerResponse<User> loginAdmin(String username, String password);
 }

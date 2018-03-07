@@ -1,6 +1,6 @@
 package com.aohanyao.blog.controller
 
-import com.aohanyao.blog.bean.UserBean
+import com.aohanyao.blog.bean.User
 import com.aohanyao.blog.common.Code
 import com.aohanyao.blog.common.ServerResponse
 import com.aohanyao.blog.service.IUserService
@@ -46,7 +46,7 @@ class UserController {
                  @RequestParam(required = true) email: String,
                  @RequestParam(required = true) passWold: String): ServerResponse<String> {
         //1.校验
-        val user = UserBean()
+        val user = User()
         user.email = email
         user.userName = userName
         user.userPass = passWold

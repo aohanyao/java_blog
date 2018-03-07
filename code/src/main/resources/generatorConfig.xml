@@ -66,30 +66,30 @@
         </javaClientGenerator>
 
 
-        <table tableName="blog_article" domainObjectName="ArticleBean" enableCountByExample="false"
+        <table tableName="blog_article" domainObjectName="Article" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
             <columnOverride column="article_content" jdbcType="VARCHAR"/>
         </table>
 
-        <table tableName="blog_article_comment" domainObjectName="ArticleCommentBean" enableCountByExample="false"
+        <table tableName="blog_article_comment" domainObjectName="ArticleComment" enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
             <columnOverride column="comment_content" jdbcType="VARCHAR"/>
         </table>
 
 
-        <table tableName="blog_article_tag" domainObjectName="ArticleTagBean" enableCountByExample="false"
+        <table tableName="blog_article_tag" domainObjectName="ArticleTag" enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
 
 
-        <table tableName="blog_article_type" domainObjectName="ArticleTypeBean" enableCountByExample="false"
+        <table tableName="blog_article_type" domainObjectName="ArticleType" enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
 
 
-        <table tableName="blog_user" domainObjectName="UserBean" enableCountByExample="false"
+        <table tableName="blog_user" domainObjectName="User" enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
 

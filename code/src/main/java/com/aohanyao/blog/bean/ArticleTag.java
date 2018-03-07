@@ -1,16 +1,16 @@
 package com.aohanyao.blog.bean;
 
-public class ArticleTagBean {
+public class ArticleTag {
     private Integer id;
 
     private String tagName;
 
-    public ArticleTagBean(Integer id, String tagName) {
+    public ArticleTag(Integer id, String tagName) {
         this.id = id;
         this.tagName = tagName;
     }
 
-    public ArticleTagBean() {
+    public ArticleTag() {
         super();
     }
 

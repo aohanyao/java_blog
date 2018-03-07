@@ -2,7 +2,7 @@ package com.aohanyao.blog.bean;
 
 import java.util.Date;
 
-public class ArticleCommentBean {
+public class ArticleComment {
     private Integer commentId;
 
     private Integer articleId;
@@ -19,7 +19,7 @@ public class ArticleCommentBean {
 
     private Integer status;
 
-    public ArticleCommentBean(Integer commentId, Integer articleId, Integer userId, String commentContent, Integer starCount, Date commentCount, Integer replyCommentId, Integer status) {
+    public ArticleComment(Integer commentId, Integer articleId, Integer userId, String commentContent, Integer starCount, Date commentCount, Integer replyCommentId, Integer status) {
         this.commentId = commentId;
         this.articleId = articleId;
         this.userId = userId;
@@ -30,7 +30,7 @@ public class ArticleCommentBean {
         this.status = status;
     }
 
-    public ArticleCommentBean() {
+    public ArticleComment() {
         super();
     }
 

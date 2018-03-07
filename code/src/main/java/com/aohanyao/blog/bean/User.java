@@ -2,8 +2,8 @@ package com.aohanyao.blog.bean;
 
 import java.util.Date;
 
-public class UserBean {
-    private String userId;
+public class User {
+    private Integer userId;
 
     private String userName;
 
@@ -23,7 +23,7 @@ public class UserBean {
 
     private String email;
 
-    public UserBean(String userId, String userName, String userPass, String nickName, String header, Integer age, Integer sex, String phone, Date registerTime, String email) {
+    public User(Integer userId, String userName, String userPass, String nickName, String header, Integer age, Integer sex, String phone, Date registerTime, String email) {
         this.userId = userId;
         this.userName = userName;
         this.userPass = userPass;
@@ -36,16 +36,16 @@ public class UserBean {
         this.email = email;
     }
 
-    public UserBean() {
+    public User() {
         super();
     }
 
-    public String getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId == null ? null : userId.trim();
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {

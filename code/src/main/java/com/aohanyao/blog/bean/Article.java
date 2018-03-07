@@ -2,7 +2,7 @@ package com.aohanyao.blog.bean;
 
 import java.util.Date;
 
-public class ArticleBean {
+public class Article {
     private Integer articleId;
 
     private Integer articleTypeId;
@@ -25,7 +25,7 @@ public class ArticleBean {
 
     private String dateLink;
 
-    public ArticleBean(Integer articleId, Integer articleTypeId, String articleTitle, String articleContent, Date createTime, Date updateTime, Integer browseCount, Integer commCount, String abstractContent, String tag, String dateLink) {
+    public Article(Integer articleId, Integer articleTypeId, String articleTitle, String articleContent, Date createTime, Date updateTime, Integer browseCount, Integer commCount, String abstractContent, String tag, String dateLink) {
         this.articleId = articleId;
         this.articleTypeId = articleTypeId;
         this.articleTitle = articleTitle;
@@ -39,7 +39,7 @@ public class ArticleBean {
         this.dateLink = dateLink;
     }
 
-    public ArticleBean() {
+    public Article() {
         super();
     }
 
