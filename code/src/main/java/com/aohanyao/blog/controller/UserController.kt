@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.ResponseBody
 class UserController {
 
     @Autowired
-    val iUserService: IUserService? = null
+    lateinit var iUserService: IUserService
 
     /**
      * 用户注册
@@ -51,7 +51,7 @@ class UserController {
         user.userName = userName
         user.userPass = passWold
         //2.插入并返回结果
-        return iUserService?.register(user) ?: ServerResponse.createBySuccessMessage("空指针")
+        return iUserService.register(user) ?: ServerResponse.createBySuccessMessage("空指针")
     }
 
     @ResponseBody
@@ -67,6 +67,15 @@ class UserController {
     )
     fun login(@RequestParam emailOrUserName: String,
               @RequestParam passWold: String): ServerResponse<UserDto> {
-        return ServerResponse.createBySuccess(UserDto())
+        val userDto = UserDto()
+        userDto.age = 20
+        userDto.email = "aohanyao@gmail.com"
+        userDto.header = ""
+        userDto.nickName = "禁言"
+        userDto.phone = "13813801380"
+        userDto.sex = 1
+        userDto.userName = "aohanyao"
+
+        return ServerResponse.createBySuccess("登录成功", userDto)
     }
 }

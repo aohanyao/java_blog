@@ -19,12 +19,12 @@ import org.springframework.stereotype.Service
  class UserServiceImp : IUserService {
 
     @Autowired
-    val mUserMapper: UserMapper? = null
+    lateinit var mUserMapper: UserMapper
 
 
     override fun register(user: User): ServerResponse<String>? {
         //1.检查邮箱是否存在
-        val userNameExit = mUserMapper!!.checkUserNameExit(user.userName)
+        val userNameExit = mUserMapper.checkUserName(user.userName)
         if (userNameExit > 0) {
             return ServerResponse.createByErrorMessage("该用户名已存在")
         }

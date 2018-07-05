@@ -16,13 +16,8 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
-    /**
-     * 检查用户名是否存在
-     *
-     * @param userName 用户名
-     * @return 行数
-     */
-    int checkUserNameExit(String userName);
+
+//    int checkUserNameExit(String userName);
 
     /**
      * 检查邮箱是否存在
@@ -31,4 +26,6 @@ public interface UserMapper {
      * @return 行数
      */
     int checkEmailExit(String email);
+
+    int checkUserName(String userName);
 }

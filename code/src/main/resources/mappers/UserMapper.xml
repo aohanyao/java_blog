@@ -39,12 +39,14 @@
       #{phone,jdbcType=CHAR}, #{registerTime,jdbcType=DATE}, #{email,jdbcType=VARCHAR}
       )
   </insert>
-  <select id="checkUserNameExit" resultType="int">
+
+  <select id="checkUserName" resultType="int" parameterType="string">
     SELECT COUNT(1)
     FROM blog_user
     WHERE user_name = #{userName}
   </select>
-  <select id="checkEmailExit" resultType="int">
+
+  <select id="checkEmailExit" resultType="int" parameterType="string">
     SELECT  COUNT(1)
     FROM  blog_user
     WHERE email = #{email}

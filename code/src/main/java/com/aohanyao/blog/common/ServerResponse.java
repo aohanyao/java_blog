@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class ServerResponse<T> implements Serializable {
 
     private int code;
-    private String msg;
+    private String message;
     private T data;
 
     private ServerResponse(int code){
@@ -24,15 +24,15 @@ public class ServerResponse<T> implements Serializable {
         this.data = data;
     }
 
-    private ServerResponse(int code, String msg, T data){
+    private ServerResponse(int code, String message, T data){
         this.code = code;
-        this.msg = msg;
+        this.message = message;
         this.data = data;
     }
 
-    private ServerResponse(int code, String msg){
+    private ServerResponse(int code, String message){
         this.code = code;
-        this.msg = msg;
+        this.message = message;
     }
 
     @JsonIgnore
@@ -47,8 +47,8 @@ public class ServerResponse<T> implements Serializable {
     public T getData(){
         return data;
     }
-    public String getMsg(){
-        return msg;
+    public String getMessage(){
+        return message;
     }
 
 

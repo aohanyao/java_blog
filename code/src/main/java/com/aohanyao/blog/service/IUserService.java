@@ -2,7 +2,6 @@ package com.aohanyao.blog.service;
 
 import com.aohanyao.blog.bean.User;
 import com.aohanyao.blog.common.ServerResponse;
-import com.sun.istack.internal.NotNull;
 
 import java.util.List;
 
@@ -80,15 +79,16 @@ public interface IUserService {
      * @param newPass  新密码
      * @return
      */
-    ServerResponse<String> forgetPassword(@NotNull String username,
-                                          @NotNull String oldPass,
-                                          @NotNull String newPass);
+    ServerResponse<String> forgetPassword(String username,
+                                          String oldPass,
+                                          String newPass);
 
     /**
      * 管理员登陆
+     *
      * @param username
      * @param password
      * @return
      */
-     ServerResponse<User> loginAdmin(String username, String password);
+    ServerResponse<User> loginAdmin(String username, String password);
 }
